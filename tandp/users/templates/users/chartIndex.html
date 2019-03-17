@@ -1,0 +1,179 @@
+
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard Admin Template</title>
+    <!--
+
+    Template 2108 Dashboard
+
+	http://www.tooplate.com/view/2108-dashboard
+
+    -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+    <!-- https://fonts.google.com/specimen/Open+Sans -->
+    <link rel="stylesheet" src="{% static 'users/css/fontawesome.min.css' %}">
+    <!-- https://fontawesome.com/ -->
+    <link rel="stylesheet" src="{% static 'users/css/fullcalendar.min.css' %}">
+    <!-- https://fullcalendar.io/ -->
+    <link rel="stylesheet" src="{% static 'users/css/bootstrap.min.css' %}">
+    <!-- https://getbootstrap.com/ -->
+    <link rel="stylesheet" src="{% static 'user/css/tooplate.css' %}">
+</head>
+
+<body id="reportsPage">
+    <div class="" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-xl navbar-light bg-light">
+                        <a class="navbar-brand" href="#">
+                            <i class="fas fa-3x fa-tachometer-alt tm-site-icon"></i>
+                            <h1 class="tm-site-title mb-0">KG Infosystem</h1>
+                        </a>
+                        <button class="navbar-toggler ml-auto mr-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto">
+                                
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Date:<input type="date"></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" role="button"  aria-haspopup="true"aria-expanded="false">
+                                        Employee name : <input type="text">
+                                    </a>
+                                    
+                                </li>
+                                <li class="nav-item"><button class="nav-link btn" type="submit" aria-haspopup="true"aria-expanded="false" >Modify Search</button> </li>
+                            </ul>
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex" href="login.html">
+                                        <i class="far fa-user mr-2 tm-logout-icon"></i>
+                                        <span>Logout</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- row -->
+            <div class="row tm-content-row tm-mt-big">
+                <div class="col-md-8"> <!-- division for chart display -->
+                    <div class="bg-light tm-block h-100">
+                        <h2 class="tm-block-title">Data updates</h2>
+                       <canvas id="myChart" width="725px" height="400px" ></canvas>
+                        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.bundle.min.js"></script>
+                        <script type="text/javascript" src="{% static 'users/js/main.js'"></script>
+
+                    </div>
+                </div>
+               
+               
+
+                <div class="col-md-4 ">
+                    <div class="bg-light tm-block h-100">
+                        <h2 class="tm-block-title">Description</h2>
+                       <p>A graph or chart or diagram is a diagrammatical illustration of a set of data. If the graph is uploaded as an image file, it can be placed within articles just like any other image.
+
+Graphs must be accurate and convey information efficiently. They should be viewable at different computer screen resolutions. Ideally, graphs will also be aesthetically pleasing.
+
+Please note that "graph", "chart" and "diagram" are ambiguous terms, sometimes used interchangeably.</p>
+                    
+                </div>
+            </div>
+        <div class="row tm-content-row tm-mt-small">
+            <div class="col-lg-4 " >
+                        <script type="text/javascript">
+                            osinfo = navigator
+                            osinfo = osinfo.appVersion
+                            var memory_arr = "{{all_memory_array|safe}}";
+                            var all_process = "{{all_process|safe}}";
+                            memory_arr = memory_arr.split(",")
+                            console.log(memory_arr)
+                            all_process = all_process.split(",")
+                            console.log(all_process)
+                        </script>
+                
+                <div class="bg-orange-light tm-block h-100">
+                <img src="{% static 'users/img/line.jpg' %}" onclick="make_line_chart()" alt="lineChart" style="width: 100%; height: 100%;">
+                </div>
+                </div>      
+
+         
+            <div class="col-lg-4 " >
+                <div class="bg-orange-light tm-block h-100">
+
+                <img src="{% static 'users/img/statics3.jpg' %}" onclick="make_bar_chart()" alt="barChart" style="width: 100%; height: 100%; ">
+                </div>
+            </div>
+   
+            <div class="col-lg-4">
+                <div class="bg-orange-light tm-block h-100">
+                <img src="{% static 'users/img/pie.png' %}" onclick="make_pie_chart()" alt="pieChart" style="width: 100%; height: 100%;">
+            </div>
+            </div>
+        </div>
+
+            <footer class="row tm-mt-small">
+                <div class="col-12 font-weight-light">
+                    <p class="d-inline-block tm-bg-black text-white py-2 px-4">
+                        Copyright &copy; 2019. Created 
+                         |  Distributed by <a href="sihtheem@gmail.com" class="text-white tm-footer-link">Team Rebelz</a>
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="{% static 'users/js/jquery-3.3.1.min.js' %}"></script>
+    <!-- https://jquery.com/download/ -->
+    <script src="{% static 'users/js/moment.min.js' %}"></script>
+    <!-- https://momentjs.com/ -->
+    <script src="{% static 'users/js/utils.js' %}"></script>
+    <script src="{% static 'users/js/Chart.min.js' %}"></script>
+    <!-- http://www.chartjs.org/docs/latest/ -->
+    <script src="{% static 'users/js/fullcalendar.min.js' %}"></script>
+    <!-- https://fullcalendar.io/ -->
+    <script src="{% static 'users/js/bootstrap.min.js' %}"></script>
+    <!-- https://getbootstrap.com/ -->
+    <script src="{% static 'users/js/tooplate-scripts.js' %}"></script>
+    <script>
+        let ctxLine,
+            ctxBar,
+            ctxPie,
+            optionsLine,
+            optionsBar,
+            optionsPie,
+            configLine,
+            configBar,
+            configPie,
+            lineChart,
+        barChart, pieChart;
+        // DOM is ready
+        $(function () {
+            updateChartOptions();
+            drawLineChart(); // Line Chart
+            drawBarChart(); // Bar Chart
+            drawPieChart(); // Pie Chart
+            drawCalendar(); // Calendar
+
+            $(window).resize(function () {
+                updateChartOptions();
+                updateLineChart();
+                updateBarChart();
+                reloadPage();
+            });
+        })
+    </script>
+</body>
+</html>

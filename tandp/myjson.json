@@ -1,0 +1,634 @@
+{
+    "processDetails": {
+        "System Idle Process": {
+            "Image Name": "System Idle Process",
+            "PID": "0",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "8 K"
+        },
+        "System": {
+            "Image Name": "System",
+            "PID": "4",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "5,164 K"
+        },
+        "Registry": {
+            "Image Name": "Registry",
+            "PID": "96",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "24,912 K"
+        },
+        "smss.exe": {
+            "Image Name": "smss.exe",
+            "PID": "480",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "584 K"
+        },
+        "csrss.exe": {
+            "Image Name": "csrss.exe",
+            "PID": "10620",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "5,628 K"
+        },
+        "wininit.exe": {
+            "Image Name": "wininit.exe",
+            "PID": "808",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "3,228 K"
+        },
+        "services.exe": {
+            "Image Name": "services.exe",
+            "PID": "884",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "7,360 K"
+        },
+        "lsass.exe": {
+            "Image Name": "lsass.exe",
+            "PID": "892",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "11,508 K"
+        },
+        "fontdrvhost.exe": {
+            "Image Name": "fontdrvhost.exe",
+            "PID": "22268",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "18,520 K"
+        },
+        "WUDFHost.exe": {
+            "Image Name": "WUDFHost.exe",
+            "PID": "1020",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "6,376 K"
+        },
+        "svchost.exe": {
+            "Image Name": "svchost.exe",
+            "PID": "20324",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "11,724 K"
+        },
+        "QMEmulatorService.exe": {
+            "Image Name": "QMEmulatorService.exe",
+            "PID": "1804",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "1,280 K"
+        },
+        "atiesrxx.exe": {
+            "Image Name": "atiesrxx.exe",
+            "PID": "2160",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "2,156 K"
+        },
+        "Memory Compression": {
+            "Image Name": "Memory Compression",
+            "PID": "2376",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "51,652 K"
+        },
+        "igfxCUIService.exe": {
+            "Image Name": "igfxCUIService.exe",
+            "PID": "2452",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "3,400 K"
+        },
+        "RtkAudioService64.exe": {
+            "Image Name": "RtkAudioService64.exe",
+            "PID": "2700",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "4,264 K"
+        },
+        "AvastSvc.exe": {
+            "Image Name": "AvastSvc.exe",
+            "PID": "2092",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "172,792 K"
+        },
+        "wlanext.exe": {
+            "Image Name": "wlanext.exe",
+            "PID": "2516",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "3,744 K"
+        },
+        "conhost.exe": {
+            "Image Name": "conhost.exe",
+            "PID": "20832",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "11,000 K"
+        },
+        "dasHost.exe": {
+            "Image Name": "dasHost.exe",
+            "PID": "3480",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "4,204 K"
+        },
+        "spoolsv.exe": {
+            "Image Name": "spoolsv.exe",
+            "PID": "3616",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "4,672 K"
+        },
+        "esif_uf.exe": {
+            "Image Name": "esif_uf.exe",
+            "PID": "3860",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "3,412 K"
+        },
+        "NBService.exe": {
+            "Image Name": "NBService.exe",
+            "PID": "3868",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "2,032 K"
+        },
+        "MotoHelperService.exe": {
+            "Image Name": "MotoHelperService.exe",
+            "PID": "3876",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "4,820 K"
+        },
+        "IoctlSvc.exe": {
+            "Image Name": "IoctlSvc.exe",
+            "PID": "3900",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "788 K"
+        },
+        "ForwardDaemon.exe": {
+            "Image Name": "ForwardDaemon.exe",
+            "PID": "3944",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "1,312 K"
+        },
+        "RtkBtManServ.exe": {
+            "Image Name": "RtkBtManServ.exe",
+            "PID": "3988",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "3,256 K"
+        },
+        "SecurityHealthService.exe": {
+            "Image Name": "SecurityHealthService.exe",
+            "PID": "4016",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "9,696 K"
+        },
+        "SynTPEnhService.exe": {
+            "Image Name": "SynTPEnhService.exe",
+            "PID": "4068",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "2,772 K"
+        },
+        "TeamViewer_Service.exe": {
+            "Image Name": "TeamViewer_Service.exe",
+            "PID": "3332",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "6,572 K"
+        },
+        "UCService.exe": {
+            "Image Name": "UCService.exe",
+            "PID": "3360",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "4,856 K"
+        },
+        "Lavasoft.WCAssistant.WinService.exe": {
+            "Image Name": "Lavasoft.WCAssistant.WinService.exe",
+            "PID": "3388",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "5,120 K"
+        },
+        "WsAppService.exe": {
+            "Image Name": "WsAppService.exe",
+            "PID": "1616",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "6,564 K"
+        },
+        "aswidsagent.exe": {
+            "Image Name": "aswidsagent.exe",
+            "PID": "4796",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "43,104 K"
+        },
+        "AdaptiveSleepService.exe": {
+            "Image Name": "AdaptiveSleepService.exe",
+            "PID": "7648",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "2,648 K"
+        },
+        "AvastBrowserCrashHandler.exe": {
+            "Image Name": "AvastBrowserCrashHandler.exe",
+            "PID": "9208",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "764 K"
+        },
+        "GoogleCrashHandler.exe": {
+            "Image Name": "GoogleCrashHandler.exe",
+            "PID": "8276",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "744 K"
+        },
+        "sedsvc.exe": {
+            "Image Name": "sedsvc.exe",
+            "PID": "8376",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "2,472 K"
+        },
+        "SgrmBroker.exe": {
+            "Image Name": "SgrmBroker.exe",
+            "PID": "8816",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "3,440 K"
+        },
+        "GoogleCrashHandler64.exe": {
+            "Image Name": "GoogleCrashHandler64.exe",
+            "PID": "7796",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "568 K"
+        },
+        "SearchIndexer.exe": {
+            "Image Name": "SearchIndexer.exe",
+            "PID": "7612",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "27,572 K"
+        },
+        "AvastBrowserCrashHandler64.exe": {
+            "Image Name": "AvastBrowserCrashHandler64.exe",
+            "PID": "2352",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "640 K"
+        },
+        "OSPPSVC.EXE": {
+            "Image Name": "OSPPSVC.EXE",
+            "PID": "21752",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "7,712 K"
+        },
+        "unsecapp.exe": {
+            "Image Name": "unsecapp.exe",
+            "PID": "11188",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "6,140 K"
+        },
+        "audiodg.exe": {
+            "Image Name": "audiodg.exe",
+            "PID": "1160",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "18,624 K"
+        },
+        "SearchProtocolHost.exe": {
+            "Image Name": "SearchProtocolHost.exe",
+            "PID": "43228",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "9,908 K"
+        },
+        "winlogon.exe": {
+            "Image Name": "winlogon.exe",
+            "PID": "10572",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "8,772 K"
+        },
+        "dwm.exe": {
+            "Image Name": "dwm.exe",
+            "PID": "28308",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "69,208 K"
+        },
+        "atieclxx.exe": {
+            "Image Name": "atieclxx.exe",
+            "PID": "12640",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "9,436 K"
+        },
+        "AvEmUpdate.exe": {
+            "Image Name": "AvEmUpdate.exe",
+            "PID": "10860",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "9,924 K"
+        },
+        "GoogleUpdate.exe": {
+            "Image Name": "GoogleUpdate.exe",
+            "PID": "39364",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "13,396 K"
+        },
+        "esif_assist_64.exe": {
+            "Image Name": "esif_assist_64.exe",
+            "PID": "14844",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "5,076 K"
+        },
+        "SynTPEnh.exe": {
+            "Image Name": "SynTPEnh.exe",
+            "PID": "16260",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "21,836 K"
+        },
+        "RAVBg64.exe": {
+            "Image Name": "RAVBg64.exe",
+            "PID": "4684",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "15,108 K"
+        },
+        "MotoHelperAgent.exe": {
+            "Image Name": "MotoHelperAgent.exe",
+            "PID": "16500",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "11,624 K"
+        },
+        "sihost.exe": {
+            "Image Name": "sihost.exe",
+            "PID": "29896",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "24,024 K"
+        },
+        "AvastBrowserUpdate.exe": {
+            "Image Name": "AvastBrowserUpdate.exe",
+            "PID": "31308",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "860 K"
+        },
+        "taskhostw.exe": {
+            "Image Name": "taskhostw.exe",
+            "PID": "23596",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "14,796 K"
+        },
+        "explorer.exe": {
+            "Image Name": "explorer.exe",
+            "PID": "916",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "167,600 K"
+        },
+        "igfxEM.exe": {
+            "Image Name": "igfxEM.exe",
+            "PID": "13360",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "12,368 K"
+        },
+        "SynTPHelper.exe": {
+            "Image Name": "SynTPHelper.exe",
+            "PID": "42504",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "4,624 K"
+        },
+        "ShellExperienceHost.exe": {
+            "Image Name": "ShellExperienceHost.exe",
+            "PID": "43896",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "71,120 K"
+        },
+        "SearchUI.exe": {
+            "Image Name": "SearchUI.exe",
+            "PID": "44708",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "103,308 K"
+        },
+        "RuntimeBroker.exe": {
+            "Image Name": "RuntimeBroker.exe",
+            "PID": "27488",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "9,808 K"
+        },
+        "dllhost.exe": {
+            "Image Name": "dllhost.exe",
+            "PID": "37196",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "6,804 K"
+        },
+        "backgroundTaskHost.exe": {
+            "Image Name": "backgroundTaskHost.exe",
+            "PID": "46748",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "51,000 K"
+        },
+        "SkypeBackgroundHost.exe": {
+            "Image Name": "SkypeBackgroundHost.exe",
+            "PID": "15480",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "11,752 K"
+        },
+        "SkypeApp.exe": {
+            "Image Name": "SkypeApp.exe",
+            "PID": "9540",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "44,468 K"
+        },
+        "smartscreen.exe": {
+            "Image Name": "smartscreen.exe",
+            "PID": "40172",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "25,400 K"
+        },
+        "ctfmon.exe": {
+            "Image Name": "ctfmon.exe",
+            "PID": "39144",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "14,192 K"
+        },
+        "MSASCuiL.exe": {
+            "Image Name": "MSASCuiL.exe",
+            "PID": "46008",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "9,404 K"
+        },
+        "RtkNGUI64.exe": {
+            "Image Name": "RtkNGUI64.exe",
+            "PID": "29208",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "17,064 K"
+        },
+        "OneDrive.exe": {
+            "Image Name": "OneDrive.exe",
+            "PID": "8004",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "45,016 K"
+        },
+        "Skype.exe": {
+            "Image Name": "Skype.exe",
+            "PID": "14648",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "111,416 K"
+        },
+        "MSOSYNC.EXE": {
+            "Image Name": "MSOSYNC.EXE",
+            "PID": "32056",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "13,708 K"
+        },
+        "WebCompanion.exe": {
+            "Image Name": "WebCompanion.exe",
+            "PID": "14804",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "90,164 K"
+        },
+        "uTorrent.exe": {
+            "Image Name": "uTorrent.exe",
+            "PID": "25048",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "26,860 K"
+        },
+        "utorrentie.exe": {
+            "Image Name": "utorrentie.exe",
+            "PID": "5956",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "12,636 K"
+        },
+        "YCMMirage.exe": {
+            "Image Name": "YCMMirage.exe",
+            "PID": "25592",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "8,600 K"
+        },
+        "YouCamTray.exe": {
+            "Image Name": "YouCamTray.exe",
+            "PID": "25492",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "10,568 K"
+        },
+        "acrotray.exe": {
+            "Image Name": "acrotray.exe",
+            "PID": "14452",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "7,716 K"
+        },
+        "jusched.exe": {
+            "Image Name": "jusched.exe",
+            "PID": "21888",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "7,128 K"
+        },
+        "AvastUI.exe": {
+            "Image Name": "AvastUI.exe",
+            "PID": "40916",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "22,652 K"
+        },
+        "WmiPrvSE.exe": {
+            "Image Name": "WmiPrvSE.exe",
+            "PID": "19312",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "8,068 K"
+        },
+        "pythonw.exe": {
+            "Image Name": "pythonw.exe",
+            "PID": "34000",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "23,664 K"
+        },
+        "msiexec.exe": {
+            "Image Name": "msiexec.exe",
+            "PID": "31212",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "15,436 K"
+        },
+        "SearchFilterHost.exe": {
+            "Image Name": "SearchFilterHost.exe",
+            "PID": "21808",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "8,760 K"
+        },
+        "sppsvc.exe": {
+            "Image Name": "sppsvc.exe",
+            "PID": "23764",
+            "Session Name": "Services",
+            "Session#": "0",
+            "Mem Usage": "14,588 K"
+        },
+        "cmd.exe": {
+            "Image Name": "cmd.exe",
+            "PID": "44052",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "4,300 K"
+        },
+        "tasklist.exe": {
+            "Image Name": "tasklist.exe",
+            "PID": "5400",
+            "Session Name": "Console",
+            "Session#": "7",
+            "Mem Usage": "7,844 K"
+        }
+    }
+}

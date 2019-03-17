@@ -1,0 +1,268 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard Admin Template</title>
+    <!--
+
+    Template 2108 Dashboard
+
+    http://www.tooplate.com/view/2108-dashboard
+
+    -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+    <!-- https://fonts.google.com/specimen/Open+Sans -->
+    <link rel="stylesheet" href="{% static 'users/css/fontawesome.min.css' %}">
+    <!-- https://fontawesome.com/ -->
+    
+    <link rel="stylesheet" href="{% static 'users/css/bootstrap.min.css' %}">
+    <!-- https://getbootstrap.com/ -->
+    <link rel="stylesheet" href="{% static 'users/css/tooplate.css' %}">
+
+</head>
+<body>
+    <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-xl navbar-light bg-light">
+                        <a class="navbar-brand" href="{% url 'employeeData_chart' %}" style="float: left;">
+                            <i style="display:none" class="fas fa-3x fa-tachometer-alt tm-site-icon"></i>
+                            <h1 class="tm-site-title mb-0">REBELZ</h1>
+                        </a>
+                        
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto">
+                                <!-- <li class="nav-item">
+                                    <a class="nav-link">Date:<input type="date" name ="date_var" id="date_var" ></a>
+                                </li>
+                                <select id="UniqueEmployee" name ="UniqueEmployee">
+                                    <option value="">---Select Token---</option>
+                                </select>
+                                <li class="nav-item"><button onClick="modify_search()" class="nav-link btn" type="button" aria-haspopup="true"aria-expanded="false" >Modify Search</button> </li> -->
+
+                                <!-- <form action="/update_graph/" method="POST">
+                                <li class="nav-item"><button class="nav-link btn" style="background-color: aquamarine" type="button" aria-haspopup="true"aria-expanded="false" >Update</button> </li>
+                                </form> -->
+                                <li class="nav-item">
+                                    <a class="nav-link d-flex" href="{% url 'logout_employer' %}">
+                                        <i class="far fa-user mr-2 tm-logout-icon"></i>
+                                        <span>Logout</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="row" style="width:100%;">
+                <div class="col-md-12"> <!-- division for chart display -->
+                    <div > <!-- class="bg-light tm-block h-100" -->
+                        <h2 class="tm-block-title">Data updates</h2>
+                        
+                        <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+                        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.bundle.min.js"></script>
+                        <div style="width:100%;height:400px;">
+                            <canvas id="myChart"  width="100%" height="400px" ></canvas>
+                        </div>
+                        
+
+                        <script type="text/javascript">
+
+                            // osinfo = navigator
+                            // osinfo = osinfo.appVersion
+                            // var X_train = "{{X_train}}";
+                            var total_array = '{{total_array|safe}}';
+                            // console.log(JSON.parse(total_array))
+                            total_array = JSON.parse(total_array)
+                            // var array_of_labels = '{{array_of_labels|safe}}';
+                            // var array_of_data = '{{array_of_data|safe}}'
+                            // console.log(array_of_labels)
+                            // console.log(JSON.parse(array_of_labels))
+                            // console.log(array_of_data)
+                            // console.log(JSON.parse(array_of_data))
+                            // all_process = all_process.split(",")
+
+                            // X_train = X_train.split(",")
+                            // y_train = y_train.split(",")
+                            // X_train = X_train.split(",")
+                            // y_train = y_train.split(",")
+                            // console.log(X_train)
+                            // console.log(y_train)
+                            // all_process = ["Coding", "Documentation", "Internet", "SQL"]
+
+                             chart_canvas = document.getElementById("myChart")
+                            var color_array = ['rgba(153, 102, 255, 0.2)','rgba(255, 102, 255, 0.2)','rgba(153, 255, 255, 0.2)']
+
+                             var ChartConfig = []
+                             var labels_arr = []
+                             i = 0
+                            // console.log(category.Label)
+                            // console.log(category.Label)
+                             total_array.forEach(function(category){
+                                var data_val = category.Data.X.split(',')
+                                var push_int = []
+                                var max_val = 0
+                                data_val.forEach(function(data){
+                                    if(max_val < parseFloat(data)){
+                                        max_val = parseFloat(data)
+                                    }
+                                })
+                                data_val.forEach(function(data){
+                                    push_int.push(Math.round(parseFloat(data)/(max_val/100)))
+                                })
+                                console.log("push_int")
+                                console.log(push_int)
+                                labels_arr.push(category.Label)
+                                ChartConfig.push({
+                                    label: category.Label,
+                                    //fill:false,
+                                    fillColor: "rgba(0,0,0,0)",
+                                    strokeColor: 'rgba(153, 102, 255, 0.2)',
+                                    pointColor: "rgba(200,122,20,1)",
+                                    data: push_int
+                                })
+
+                                i++
+                             })
+
+                            console.log(ChartConfig)
+
+                            load_chart = function(chart_type){
+                             chart_canvas = document.getElementById("myChart")
+                             var drawLineChart = new Chart(chart_canvas, {
+                                  type: 'line',
+                                  data: {
+                                  labels: labels_arr,
+                                  datasets: ChartConfig
+                            },
+                            options: {
+                                    responsive: true,
+                                    maintainAspectRatio: false,
+                                    scales: {
+                                        yAxes: [{
+                                            ticks: {
+                                                beginAtZero:true
+                                            }
+                                        }]
+                                    }
+                                }
+                             });
+
+                            }
+
+                            load_chart("line");
+
+                            update_chart = function(type) {
+                                load_chart(type)
+                            };
+                        </script>
+                        <!-- <script type="text/javascript" src="{% static 'users/js/drawChart.js'%}">
+                        </script> -->
+                        
+                       <!--  <script type="text/javascript" >
+                            load_chart("pie")
+                        </script> -->
+
+                    </div>
+                </div>
+
+
+                <!-- <div class="col-md-4 ">
+                    <div class="bg-light tm-block h-100">
+                        <h2 class="tm-block-title">Description</h2>
+                    
+                </div> -->
+            </div>
+    
+        <!-- <div class="row tm-content-row tm-mt-small">
+            <div class="col-lg-4 " >
+                
+                <div class="bg-orange-light tm-block h-100">
+                <img src="{% static 'users/img/line.jpg' %}" onclick="update_chart('line')" alt="lineChart" style="width: 100%; height: 100%;">
+                </div>
+                </div>      
+
+         
+            <div class="col-lg-4 " >
+                <div class="bg-orange-light tm-block h-100">
+
+                <img src="{% static 'users/img/statics3.jpg' %}" onclick="update_chart('bar')" alt="barChart" style="width: 100%; height: 100%; ">
+                </div>
+            </div>
+   
+            <div class="col-lg-4">
+                <div class="bg-orange-light tm-block h-100">
+                <img src="{% static 'users/img/pie.png' %}" onclick="update_chart('pie')" alt="pieChart" style="width: 100%; height: 100%;">
+            </div>
+            </div>
+        </div> -->
+
+            <footer class="row tm-mt-small">
+                <div class="col-12 font-weight-light">
+                    <p class="d-inline-block tm-bg-black text-white py-2 px-4">
+                        Copyright &copy; 2019. Created 
+                         |  Distributed by <a href="sihtheem@gmail.com" class="text-white tm-footer-link">Team Rebelz</a>
+                    </p>
+                </div>
+            </footer>
+
+
+    <script src="{% static 'users/js/jquery-3.3.1.min.js' %}"></script>
+    <!-- https://jquery.com/download/ -->
+    <script src="{% static 'users/js/moment.min.js' %}"></script>
+    <!-- https://momentjs.com/ -->
+    <script src="{% static 'users/js/utils.js' %}"></script>
+    <script src="{% static 'users/js/Chart.min.js' %}"></script>
+    <!-- http://www.chartjs.org/docs/latest/ -->
+    
+    <script src="{% static 'users/js/bootstrap.min.js' %}"></script>
+    <!-- https://getbootstrap.com/ -->
+    <script src="{% static 'users/js/tooplate-scripts.js' %}"></script>
+    <script type="text/javascript">
+        // var v = ["vikas","vivek","tareek",'pakoda']
+        var v = '{{tokens|safe}}'
+        v = v.split(",")
+        // console.log("v")
+        // console.log(v)
+        v.forEach(function(item){
+            $('#UniqueEmployee').append('<option value="'+item+'">'+item+'</option>')
+        })
+    </script>
+    <script type="text/javascript">
+        modify_search = function(){
+        var date_var = $("#date_var").val()
+        console.log("date_var")
+        console.log(date_var)
+        var UniqueEmployee = $("#UniqueEmployee").val()
+        if(!(date_var == "")){
+            var dateuri = date_var.split("-")
+            dateuri = dateuri.join("_")
+            // var dateuri = encodeURIComponent(date_var)
+        }else{
+            var dateuri = "Unset"
+        }
+        if(!(UniqueEmployee == "")){
+            var token_selected = UniqueEmployee
+        }else{
+            var token_selected = "Unset"
+        }
+        console.log("dateuri")
+        console.log(dateuri)
+        console.log("token_selected")
+        console.log(token_selected)
+        if(dateuri=="Unset" && token_selected == "Unset"){
+            location.reload()
+        }else{
+            location.href = "/"+dateuri+"/"+token_selected
+        }
+    }
+    </script>
+
+
+</body>
+</html>
